@@ -95,6 +95,7 @@ div.links {
 h1 {
     position: relative;
     left: 1vw;
+    font-size:150%;
 }
 
 a {
