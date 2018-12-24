@@ -67,12 +67,29 @@ div.message {
     height: auto;
     position: relative;
     left: 1vw;
+    margin: auto;
+}
+
+div.landing {
+    position: static;
+    margin: auto;
+    text-align: center;
+
+}
+
+div.links {
+    position: static;
+    margin: auto;
+    text-align: center;
 }
 
 .profile {
     max-width: 100%;
     height: auto;
     position: static;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
@@ -80,8 +97,7 @@ h1 {
     left: 1vw;
 }
 
-div.landing {
-    position: static;
-    width: 100vw;
-    height: 100vh;
+a {
+    color:black;
 }
+
