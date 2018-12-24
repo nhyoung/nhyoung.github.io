@@ -84,7 +84,7 @@ div.links {
 }
 
 .profile {
-    max-width: 20%;
+    max-width: 25vh;
     height: auto;
     position: static;
     display: block;
