@@ -1,12 +1,12 @@
 $(document).ready(function(){
-    // $("body").hide(0).delay(100).fadeIn(3500)
+    // $("body").hide(0).delay(100).fadeIn(4000)
     ScrollReveal().reveal('header', {duration: 3500});
-    ScrollReveal().reveal('.about', {duration: 3500});
-    ScrollReveal().reveal('.services', {duration: 3500});
-    ScrollReveal().reveal('.portfolio', {duration: 3500});
-    ScrollReveal().reveal('.portfolio-item', {duration: 3500});
-    ScrollReveal().reveal('.experience', {duration: 3500});
-    ScrollReveal().reveal('.contact', {duration: 3500});
+    ScrollReveal().reveal('.about', {duration: 4000});
+    ScrollReveal().reveal('.services', {duration: 4000});
+    ScrollReveal().reveal('.portfolio', {duration: 4000});
+    ScrollReveal().reveal('.portfolio-item', {duration: 4000});
+    ScrollReveal().reveal('.experience', {duration: 4000});
+    ScrollReveal().reveal('.contact', {duration: 4000});
 });
 
 $(document).ready(function() {
