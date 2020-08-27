@@ -38,9 +38,9 @@ $(document).ready(function() {
         }, 1000);
     });
 
-    // AOS.init({
-    //     easing: 'ease',
-    //     duration: 2000,
-    //     once: true
-    // });
+    AOS.init({
+        easing: 'ease',
+        duration: 2000,
+        once: true
+    });
 })
