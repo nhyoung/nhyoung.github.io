@@ -13,31 +13,224 @@
 		<meta name="theme-color" content="#ffffff">
 
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">		
 		<script src="jquery-3.4.1.min.js"></script>
 		<script src="main.js"></script>
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
 	</head>
 	<body id="body">
-		<div id="landing">
-			<h1>Hi, I'm Nick. Thanks for stopping by.</h1>
-			<div id="message">
-				<img class="profile" src="images/2_circle.png" alt="profile picture">
-				<div id="description">
-						<p> I'm currently a Software Engineering Intern at Computing for All, where I'm 
-								working on a new cloud-based web platform that will help bring computer 
-								science education to students of all ages and backgrounds. <br></p>
+		<header>
+			<div class="menu-toggler">
+				<div class="bar half start"></div>
+				<div class="bar"></div>
+				<div class="bar half end"></div>
+			</div>
+			<nav class="top-nav">
+				<ul class="nav-list">
+					<li>
+						<a href="index.html" class="nav-link">Home</a>
+					</li>
+					<li>
+						<a href="#about" class="nav-link">About</a>
+					</li>
+					<!-- <li>
+						<a href="#services" class="nav-link">Services</a>
+					</li> -->
+					<li>
+						<a href="#portfolio" class="nav-link">Portfolio</a>
+					</li>
+					<!-- <li>
+						<a href="#experience" class="nav-link">Timeline</a>
+					</li> -->
+					<li>
+						<a href="#contact" class="nav-link">Connect</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="landing-text">
+				<h1>Nick Young</h1>
+				<h6>Software Engineer</h6>
+			</div>
+		</header>
+
+		<section class="about" id="about">
+			<div class="container">
+				<div class="profile-img">
+					<img src="images/2_circle.png" alt="profile picture">
+				</div>
+				<div class="about-details">
+					<div class="about-heading">
+						<h1>About</h1>
+						<h6>Me</h6>
+					</div>
+					<p>
+						Hi, I'm Nick. Thanks for stopping by. I'm currently a 5th year student at the University of Washington
+						studying Computer Science, with minors in Math and Informatics. </br></br>This summer, I've been doing research and 
+						developing Unity mechanics to help teach future students of the Introduction to Game Development course at UW Bothell.
+					</p>
+
+				</div>
+				
+			</div>
+		</section>
+		
+		<!-- <section class="services" id="services">
+			<div class="container">
+				<div class="section-heading">
+					<h1>Skills</h1>
+				</div>
+				<div class="my-skills">
+					<div class="skill">
+						<div class="icon-container">
+							<i class="fas fa-code"></i>
+						</div>
+						<h1>Web Developer</h1>
+						<p>Lorem Ipsum</p>
+					</div>
+					<div class="skill">
+						<div class="icon-container">
+							<i class="fas fa-layer-group"></i>
+						</div>
+						<h1>Application Developer</h1>
+						<p>Lorem Ipsum</p>
+					</div>
+					<div class="skill">
+						<div class="icon-container">
+							<i class="fas fa-chart-bar"></i>
+						</div>
+						<h1>Web Developer</h1>
+						<p>Lorem Ipsum</p>
+					</div>
 				</div>
 			</div>
-		</div>
+		</section> -->
 
-		<div class="links">
-			<p>Find out more about me below!</p>
-			<a href="https://github.com/nhyoung" target="_blank"><i class="fab fa-github" style="font-size:50px; padding-right:2vh;"></i></a>
-			<a href="https://linkedin.com/in/nhyoung63" target="_blank"><i class="fab fa-linkedin" style="font-size:50px; padding-right:2vh;"></i></a>
-			<a href="resources/resume.pdf" target="_blank"><i class='fas fa-file-alt' style='font-size: 50px;'></i></a>
-		</div>
-							
+		<section class="portfolio" id="portfolio">
+			<div class="container">
+				<div class="section-heading">
+					<h1>Portfolio</h1>
+					<h6>Some things I've worked on</h6>
+				</div>
+				<div class="portfolio-item">
+					<div class="portfolio-img has-margin-right">
+						<img src="images/job_results_withfilters.png" alt="screenshot of job portal">
+					</div>
+					<div class="portfolio-description">
+						<h6>Web Development Internship</h6>
+						<h1>Computing for All</h1>
+						<p>Using React, I developed 6 webpages for a job portal, including a job search page, log in page, and more.</p>
+						<a href="http://www.digitalskillsforall.org/dsfa-job-portal/" target="_blank" class="cta">Details</a>
+					</div>
+				</div>
+				<div class="portfolio-item">
+					<div class="portfolio-description has-margin-right">
+						<h6>Undergraduate Research</h6>
+						<h1>100 Unity Mechanics</h1>
+						<p>Under professor guidance, I am developing 100 commonly-used mechanics in Unity that will
+							serve as the "textbook" for future students in the Introduction to Game Development course at UW Bothell.
+						</p>
+						<a href="https://github.com/t4guw/100-Unity-Mechanics-for-Programmers" target="_blank" class="cta">View them here</a>
+					</div>
+					<div class="portfolio-img">
+						<img src="images/unity_research.png" alt="screenshot of unity editor">
+					</div>					
+				</div>
+				<div class="portfolio-item">		
+					<div class="portfolio-img has-margin-right">
+						<img src="images/people_pleasers.png" alt="screenshot of game">
+					</div>
+					<div class="portfolio-description">
+						<h6>Game Developer</h6>
+						<h1>People Pleasers</h1>
+						<p>In a team of 5, I helped develop a tower defense game in Unity.</p>
+						<a href="https://simmer.io/@kirby490/people-pleasers" target="_blank" class="cta">Play it here</a>
+					</div>				
+				</div>
+				<div class="portfolio-item">
+					<div class="portfolio-description has-margin-right">
+						<h6>Web Developer</h6>
+						<h1>Portfolio Website</h1>
+						<p>This website was developed using purely HTML, CSS, and JavaScript. No SquareSpace or Wix!</p>
+					</div>		
+					<div class="portfolio-img">
+						<img src="images/website_screenshot.png" alt="screenshot of website">
+					</div>		
+				</div>
+			</div>
+		</section>
+
+		<!-- <section class="experience" id="experience">
+			<div class="container">
+				<div class="section-heading">
+					<h1>Timeline</h1>
+				</div>
+				<div class="timeline">
+					<ul>
+						<li class="date" data-date="May 2019 - Present">
+							<h1>UW Football</h1>
+							<p>Lorem Ipsum</p>
+						</li>
+						<li class="date" data-date="July 2019 - September 2019">
+							<h1>Computing for All</h1>
+							<p>Lorem Ipsum</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section> -->
+		
+		<section class="contact" id="contact">
+			<div class="container">
+				<div class="section-heading">
+					<h1>Connect</h1>
+					<!-- <h6>Connect with me</h6> -->
+				</div>
+				<!-- <form action="">
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" placeholder="Your Name" required>
+
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" placeholder="Your Email" required>
+
+					<label for="subject">Subject:</label>
+					<textarea name="subject" id="subject" cols="10" rows="1"></textarea>
+
+					<label for="body">Body:</label>
+					<textarea name="body" id="body" cols="10" rows="10"></textarea>
+
+					<input type="submit" value="Submit">
+				</form> -->
+				<div class="social-media">
+					<ul class="nav-list">
+						<li>
+							<a href="https://github.com/nhyoung" target="_blank" class="icon-link">
+								<i class="fab fa-github"></i>
+							</a>
+						</li>
+						<li>
+							<a href="https://linkedin.com/in/nhyoung63" target="_blank" class="icon-link">
+								<i class="fab fa-linkedin"></i>
+							</a>
+						</li>
+						<li>
+							<a href="resources/resume.pdf" target="_blank" class="icon-link">
+								<i class="fas fa-file-alt"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<footer class="copyright">
+			<div class="up" id="up">
+				<i class="fas fa-chevron-up"></i>	
+			</div>
+			<p>&copy; 2020 Nick Young</p>
+		</footer>
 	</body>
 </html>
