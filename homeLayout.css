@@ -8,6 +8,7 @@
 html {
     font-size: 10px;
     font-family: 'Roboto', sans-serif;
+    border-color: transparent;
     color: #eee;
 }
 
@@ -167,7 +168,6 @@ li {
     width: 100%;
     height: 4px;
     border-radius: .8rem;
-
 }
 
 .bar.half {
@@ -200,6 +200,8 @@ li {
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
+    bottom: -1px;
+    background-position-y: -1px;
     z-index: 1;
 }
 
@@ -589,10 +591,6 @@ input[type="submit"]:hover {
     body {
         background: url("images/sitebg2.jpg") no-repeat center fixed;
         background-size: cover;
-    }
-
-    .landing-text {
-        border-color: transparent;
     }
 
     .landing-text h1 {
