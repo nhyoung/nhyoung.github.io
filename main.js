@@ -32,6 +32,12 @@ $(document).ready(function() {
         }, 1000);
     });
 
+    $('#down').on('click', function() {
+        $('html, body').animate({
+            scrollTop: $(".about").offset().top
+        }, 1000);
+    });
+
     // AOS.init({
     //     easing: 'ease',
     //     duration: 2000,

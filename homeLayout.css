@@ -219,6 +219,13 @@ li {
     font-size: 4rem;
     font-weight: 300;
 }
+
+.down {
+    text-align: center;
+    cursor: pointer;
+    font-size: 4rem;
+    margin-top: 10rem;
+}
 /* End Header */
 
 /* Start About */
